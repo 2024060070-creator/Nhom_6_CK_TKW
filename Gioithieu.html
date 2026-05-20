@@ -19,6 +19,14 @@
             SweetBear
         </a>
 
+        <!-- Ô tìm kiếm ở giữa -->
+        <form class="d-flex mx-auto w-50">
+            <input class="form-control me-2" type="search"
+                   placeholder="Tìm gấu bông bạn thích..."
+                   id="searchInput"
+                   onkeyup="searchProduct()">
+        </form>
+
         <!-- Nút phải -->
         <div>
             <a href="index.html" class="btn btn-light me-2">Trang chủ</a>
@@ -53,6 +61,8 @@
              style="max-height:350px; object-fit:cover;">
     </div>
 
+    <hr class="my-5" style="border-top: 2px dashed #ff9ecb;">
+    
     <h2 class="sweet-title mb-4">
     🧸 SweetBear Là Ai?
     </h2>
@@ -87,7 +97,58 @@
         </div>
 
     </div>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.042399487174!2d106.84070847480763!3d10.96016988919995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174dd00485e40c3%3A0xe3edfb130728654f!2zUHVuaSAtIFBo4bulIEtp4buHbiB2w6AgUXXDoCB04bq3bmc!5e0!3m2!1svi!2s!4v1779258007735!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+
+
+
+    <hr class="my-5" style="border-top: 2px dashed #ff9ecb;">
+
+    <div class="row g-4 mt-4">
+        <div class="col-lg-6 col-md-12">
+            <div class="contact-info-card mb-4">
+                <h4 class="sweet-title-pink">🧸 Thông Tin Cửa Hàng</h4>
+                <ul class="list-unstyled mt-3 contact-list-styled">
+                    <li><span class="icon-sparkle">📍</span> <strong>Địa chỉ:</strong> 43 Đường Dương Tử Giang, Phường Tân Hiệp, Biên Hòa, Đồng Nai</li>
+                    <li><span class="icon-sparkle">📞</span> <strong>Hotline:</strong> 037 419 0130</li>
+                    <li><span class="icon-sparkle">🌐</span> <strong>Facebook:</strong> <a href="https://www.facebook.com/share/18h2Fd1ddj/?mibextid=wwXIfr" target="_blank" class="text-pink-link fw-bold">Puni - Phụ Kiện và Quà Tặng</a></li>
+                </ul>
+            </div>
+
+            <div class="feedback-card">
+                <h4 class="sweet-title-pink">💬 Gửi Feedback Cho Chúng Mình</h4>
+                <p class="text-muted small">Ý kiến đóng góp của bạn sẽ giúp SweetBear ngày càng hoàn thiện hơn đấy! ✨</p>
+                
+                <form action="#" method="POST" class="mt-3">
+                    <div class="mb-3">
+                        <label for="txtName" class="form-label fw-semibold text-pink">Họ và tên:</label>
+                        <input type="text" id="txtName" class="form-control sweet-input" placeholder="Nhập tên của bạn..." required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="txtContent" class="form-label fw-semibold text-pink">Lời nhắn / Feedback:</label>
+                        <textarea id="txtContent" class="form-control sweet-input" rows="4" placeholder="Nhập phản hồi dễ thương tại đây..." required></textarea>
+                    </div>
+                    <div class="text-end">
+                        <button type="submit" class="btn btn-submit-pink px-4 py-2 fw-bold">🚀 Gửi Góp Ý</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12">
+            <div class="map-container">
+                <h4 class="sweet-title-pink mb-3">📍 Bản Đồ Đường Đi</h4>
+                <div class="ratio ratio-4x3 map-iframe-box">
+                    <iframe 
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.042399487174!2d106.84070847480763!3d10.96016988919995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174dd00485e40c3%3A0xe3edfb130728654f!2zUHVuaSAtIFBo4bulIEtp4buHbiB2w6AgUXXDoCB04bq3bmc!5e0!3m2!1svi!2s!4v1779258007735!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </section>
 

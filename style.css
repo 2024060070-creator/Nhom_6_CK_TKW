@@ -82,26 +82,78 @@ body {
     transform: scale(1.05);
     background: #ffb3d9;
 }
+
+
 /* ===== PROFILE CARD ===== */
 .profile-card {
-    background: #ffffff;
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-    transition: 0.3s;
+    position: relative;
+    background: linear-gradient(135deg, #ff9f79, #fff5fb);
+    padding: 35px 25px;
+    border-radius: 25px;
+    box-shadow: 0 15px 35px rgba(255, 105, 180, 0.25);
+    transition: all 0.4s ease;
+    overflow: hidden;
 }
 
+/* Hiệu ứng ánh sáng chạy */
+.profile-card::before {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,0.4),
+        transparent
+    );
+    transform: rotate(25deg);
+    transition: 0.6s;
+}
+
+.profile-card:hover::before {
+    top: 100%;
+    left: 100%;
+}
+
+/* Hover nổi mạnh hơn */
 .profile-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-12px) scale(1.03);
+    box-shadow: 0 20px 45px rgba(255, 105, 180, 0.4);
 }
 
+/* Ảnh đại diện */
 .profile-img {
     width: 150px;
     height: 150px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid #ff9ecb;
+    border: 6px solid white;
+    box-shadow: 0 10px 25px rgba(255, 105, 180, 0.4);
+    transition: 0.4s;
 }
+
+/* Ảnh xoay nhẹ khi hover */
+.profile-card:hover .profile-img {
+    transform: rotate(5deg) scale(1.05);
+}
+
+/* Tên nổi bật */
+.profile-card h4 {
+    color: #ff4d88;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+/* Chữ mềm mại hơn */
+.profile-card p {
+    color: #555;
+    font-size: 15px;
+}
+
+
 
 
 
@@ -229,6 +281,105 @@ section p {
 
 
 
+/* ===== DESIGN BỔ SUNG CHO PHẦN LIÊN HỆ TRONG FILE GIỚI THIỆU ===== */
+
+/* Tiêu đề nhỏ bên trong các khối */
+.sweet-title-pink {
+    color: #ff4fa3;
+    font-weight: 700;
+    border-bottom: 2px dashed #ff9ecb;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+/* Khối thông tin liên hệ bên trái */
+.contact-info-card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 20px;
+    border: 2px solid #ffd1e8;
+    box-shadow: 0 8px 20px rgba(255, 158, 203, 0.15);
+}
+
+.contact-list-styled li {
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: #444;
+}
+
+/* Link facebook màu hồng nổi bật */
+.text-pink-link {
+    color: #ff4fa3;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.text-pink-link:hover {
+    color: #ff2f91;
+    text-decoration: underline;
+}
+
+/* Khối form feedback */
+.feedback-card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 20px;
+    border: 2px solid #ffd1e8;
+    box-shadow: 0 8px 20px rgba(255, 158, 203, 0.15);
+}
+
+/* Các ô input điền thông tin */
+.sweet-input {
+    border: 2px solid #ffd1e8;
+    border-radius: 12px;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+.sweet-input:focus {
+    border-color: #ff4fa3;
+    box-shadow: 0 0 0 0.25rem rgba(255, 79, 163, 0.25);
+    outline: none;
+}
+
+/* Nút gửi feedback lung linh */
+.btn-submit-pink {
+    background: linear-gradient(to right, #ff9ecb, #ff4fa3);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(255, 79, 163, 0.3);
+    transition: all 0.3s ease;
+}
+.btn-submit-pink:hover {
+    background: linear-gradient(to right, #ff4fa3, #ff2f91);
+    color: white;
+    transform: scale(1.03);
+    box-shadow: 0 6px 15px rgba(255, 47, 145, 0.4);
+}
+
+/* Khối bọc bản đồ bên phải */
+.map-container {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 20px;
+    border: 2px solid #ffd1e8;
+    box-shadow: 0 8px 20px rgba(255, 158, 203, 0.15);
+}
+
+/* Bo góc cho khung bản đồ mượt mà */
+.map-iframe-box {
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid #ffd1e8;
+}
+
+/* Icon trang trí cute trước các dòng text */
+.icon-sparkle {
+    display: inline-block;
+    margin-right: 6px;
+    transform: scale(1.1);
+}
+
+
 
 /* ===== FOOTER ===== */
 .sweet-footer {
@@ -277,3 +428,199 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+
+/* =====Giỏ Hàng*/
+/* ===== ĐOẠN STYLE BỔ SUNG CHO GIỎ HÀNG & CUSTOM MODAL ALERT ===== */
+
+/* Khối bao bọc danh sách sản phẩm bên trái */
+.contact-info-card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 20px;
+    border: 2px solid #ffd1e8;
+    box-shadow: 0 8px 20px rgba(255, 158, 203, 0.12);
+}
+
+.sweet-title-pink {
+    color: #ff4fa3;
+    font-weight: 700;
+    border-bottom: 2px dashed #ff9ecb;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+/* Khối điền form thông tin bên phải */
+.feedback-card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 20px;
+    border: 2px solid #ffd1e8;
+    box-shadow: 0 8px 20px rgba(255, 158, 203, 0.12);
+}
+
+/* Input text, select bo tròn mềm mịn */
+.sweet-input {
+    border: 2px solid #ffd1e8;
+    border-radius: 12px;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+.sweet-input:focus {
+    border-color: #ff4fa3;
+    box-shadow: 0 0 0 0.25rem rgba(255, 79, 163, 0.2);
+    outline: none;
+}
+
+/* Nút đặt hàng gradient */
+.btn-submit-pink {
+    background: linear-gradient(to right, #ff9ecb, #ff4fa3);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(255, 79, 163, 0.25);
+    transition: all 0.3s ease;
+}
+.btn-submit-pink:hover {
+    background: linear-gradient(to right, #ff4fa3, #ff2f91);
+    color: white;
+    transform: scale(1.02);
+}
+
+/* Nút xóa sản phẩm viền mỏng đỏ hồng */
+.btn-outline-danger {
+    color: #ff4f79;
+    border-color: #ffcbd7;
+}
+.btn-outline-danger:hover {
+    background-color: #ff4f79;
+    border-color: #ff4f79;
+    color: white;
+}
+
+/* ===== GIAO DIỆN HỘP THÔNG BÁO (ALERT) CHÍNH GIỮA MÀN HÌNH ===== */
+.sweet-alert-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    backdrop-filter: blur(2px); /* Hiệu ứng làm mờ nhẹ nền phía sau */
+}
+
+.sweet-alert-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 24px;
+    width: 90%;
+    max-width: 380px;
+    border: 3px solid #ffd1e8;
+    box-shadow: 0 10px 30px rgba(255, 79, 163, 0.3);
+    animation: popUpAnim 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.sweet-alert-icon {
+    font-size: 45px;
+    margin-bottom: 5px;
+    animation: bounceIcon 0.6s infinite alternate;
+}
+
+/* Tạo hiệu ứng chuyển động cho Popup & Icon dễ thương */
+@keyframes popUpAnim {
+    from { transform: scale(0.7); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes bounceIcon {
+    from { transform: translateY(0); }
+    to { transform: translateY(-8px); }
+}
+
+
+ /* CSS trang trí thêm hiệu ứng đặc biệt cho trang Gấu Lớn */
+        .ribbon-pop {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: linear-gradient(45deg, #ff2f91, #ff75b5);
+            color: white;
+            font-size: 11px;
+            font-weight: bold;
+            padding: 4px 10px;
+            border-radius: 20px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+            z-index: 2;
+        }
+        .sparkle-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #fff01f;
+            color: #333;
+            font-size: 11px;
+            font-weight: bold;
+            padding: 4px 8px;
+            border-radius: 8px;
+            z-index: 2;
+            animation: pulse 1.5s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        .giant-header-banner {
+            background: linear-gradient(135deg, #ffe3f1 0%, #ffd1e8 100%);
+            border-radius: 25px;
+            padding: 40px 20px;
+            margin-bottom: 40px;
+            border: 2px dashed #ff9ecb;
+        }
+
+
+
+
+        /* CSS trang trí độc quyền cho danh mục Size Nhỏ */
+        .badge-mini {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            background: linear-gradient(45deg, #ff75b5, #ffb6d9);
+            color: white;
+            font-size: 11px;
+            font-weight: bold;
+            padding: 3px 10px;
+            border-radius: 12px;
+            z-index: 2;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .badge-sparkle {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background: #e3f2fd;
+            color: #0d6efd;
+            font-size: 11px;
+            font-weight: bold;
+            padding: 3px 8px;
+            border-radius: 6px;
+            border: 1px solid #b3e5fc;
+            z-index: 2;
+        }
+        .small-banner {
+            background: linear-gradient(135deg, #fff0f6 0%, #ffe3ec 100%);
+            border-radius: 20px;
+            padding: 35px 20px;
+            margin-bottom: 35px;
+            border: 2px dashed #ffb6d9;
+        }
+
+
+
+
+        

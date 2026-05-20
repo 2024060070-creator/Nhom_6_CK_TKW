@@ -2,7 +2,7 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Hàng mới về - SweetBear</title>
+    <title>Gấu Teddy - SweetBear</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -14,8 +14,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-pink shadow-sm">
     <div class="container d-flex justify-content-between align-items-center">
 
-        <!-- Logo bên trái -->
-      <a class="navbar-brand d-flex align-items-center text-white fw-bold" href="#">
+        <a class="navbar-brand d-flex align-items-center text-white fw-bold" href="#">
             <img src="img/2.png"width="60" class="me-2">
             SweetBear
         </a>
@@ -28,10 +27,9 @@
                    onkeyup="searchProduct()">
         </form>
         
-        <!-- Nút phải -->
         <div>
             <a href="index.html" class="btn btn-light me-2">Trang chủ</a>
-            <button class="btn btn-warning position-relative" onclick="goToCart()">
+            <button class="btn btn-warning position-relative">
                 🛒 <span id="cartCount" class="badge bg-danger">0</span>
             </button>
         </div>
@@ -39,14 +37,14 @@
     </div>
 </nav>
 
-<!-- ===== MENU DƯỚI NAVBAR (CHÍNH GIỮA) ===== -->
+<!-- ===== MENU ===== -->
 <div class="menu-bar">
     <div class="container text-center">
         <a href="index.html" class="menu-link">Trang chủ</a>
         <a href="Gioithieu.html" class="menu-link">Giới Thiệu</a>
-        <a href="teddy.html" class="menu-link ">Gấu bông Teddy</a>
+        <a href="teddy.html" class="menu-link active">Gấu bông Teddy</a>
         <a href="Hoathinh.html" class="menu-link">Gấu bông Hoạt hình</a>
-        <a href="new.html" class="menu-link active">Hàng mới về</a>
+        <a href="new.html" class="menu-link">Hàng mới về</a>
     </div>
 </div>
 
@@ -72,7 +70,7 @@
         <div class="col-md-9">
 
             <div class="d-flex justify-content-between align-items-center mb-3">
-                <p class="result-text">Hiển thị tất cả <strong>10</strong> sản phẩm</p>
+                <p class="result-text">Hiển thị tất cả <strong>12</strong> sản phẩm</p>
 
                 <select class="form-select w-auto">
                     <option>Mới nhất</option>
@@ -83,22 +81,23 @@
 
            <div class="row g-4">
   
-<section class="container py-5">
-    <h2 class="text-center text-pink fw-bold mb-5">✨ BỘ SƯU TẬP HÀNG MỚI VỀ SIÊU HOT ✨</h2>
+            
+  <section class="container py-5">
+    <h2 class="text-center text-pink fw-bold mb-5">🧸 BỘ SƯU TẬP GẤU TEDDY CHU CHE 🧸</h2>
     
     <div class="row g-4 mb-4">
         <div class="col-md-3 col-sm-6">
             <div class="card teddy-card text-center h-100 shadow-sm">
-                <img src="IMG/new1.jpg" class="teddy-img card-img-top" alt="Gấu Đô Con Giúp Bảo Vệ Chủ Nhân">
+                <img src="IMG/teddy 1.jpg" class="teddy-img card-img-top" alt="Tuyết say hi">
                 <div class="card-body d-flex flex-column justify-content-between">
-                    <h6>Gấu Đô Con Giúp Bảo Vệ Chủ Nhân</h6>
+                    <h6>Tuyết say hi</h6>
                     <p class="text-danger fw-bold">250.000 đ</p>
                     <select class="form-select form-select-sm mb-2">
                         <option>Size S</option>
                         <option>Size M</option>
                         <option>Size L</option>
                     </select>
-                    <button class="btn btn-pink btn-sm w-100" onclick="addToCart(201)">
+                    <button class="btn btn-pink btn-sm w-100" onclick="addToCart(1)">
                         🛒 Thêm vào giỏ
                     </button>
                 </div>
@@ -107,16 +106,16 @@
 
         <div class="col-md-3 col-sm-6">
             <div class="card teddy-card text-center h-100 shadow-sm">
-                <img src="IMG/new2.jpg" class="teddy-img card-img-top" alt="Bé Gấu Có Mái Tóc Đặc Biệt">
+                <img src="IMG/teddy 2.jpg" class="teddy-img card-img-top" alt="Pig thư giãn">
                 <div class="card-body d-flex flex-column justify-content-between">
-                    <h6>Bé Gấu Có Mái Tóc Đặc Biệt</h6>
+                    <h6>Pig thư giãn</h6>
                     <p class="text-danger fw-bold">270.000 đ</p>
                     <select class="form-select form-select-sm mb-2">
                         <option>Size S</option>
                         <option>Size M</option>
                         <option>Size L</option>
                     </select>
-                    <button class="btn btn-pink btn-sm w-100" onclick="addToCart(202)">
+                    <button class="btn btn-pink btn-sm w-100" onclick="addToCart(2)">
                         🛒 Thêm vào giỏ
                     </button>
                 </div>
@@ -125,16 +124,16 @@
 
         <div class="col-md-3 col-sm-6">
             <div class="card teddy-card text-center h-100 shadow-sm">
-                <img src="IMG/new3.jpg" class="teddy-img card-img-top" alt="Tiểu Cường Thơm Tho">
+                <img src="IMG/teddy 3.jpg" class="teddy-img card-img-top" alt="Cà rốt yêu củ cải">
                 <div class="card-body d-flex flex-column justify-content-between">
-                    <h6>Tiểu Cường Thơm Tho</h6>
+                    <h6>Cà rốt yêu củ cải</h6>
                     <p class="text-danger fw-bold">300.000 đ</p>
                     <select class="form-select form-select-sm mb-2">
                         <option>Size S</option>
                         <option>Size M</option>
                         <option>Size L</option>
                     </select>
-                    <button class="btn btn-pink btn-sm w-100" onclick="addToCart(203)">
+                    <button class="btn btn-pink btn-sm w-100" onclick="addToCart(3)">
                         🛒 Thêm vào giỏ
                     </button>
                 </div>
@@ -143,16 +142,16 @@
 
         <div class="col-md-3 col-sm-6">
             <div class="card teddy-card text-center h-100 shadow-sm">
-                <img src="IMG/new4.jpg" class="teddy-img card-img-top" alt="Khỉ Đột Cô Đơn">
+                <img src="IMG/teddy 4.jpg" class="teddy-img card-img-top" alt="Teddy thất tình">
                 <div class="card-body d-flex flex-column justify-content-between">
-                    <h6>Khỉ Đột Cô Đơn</h6>
+                    <h6>Teddy thất tình</h6>
                     <p class="text-danger fw-bold">230.000 đ</p>
                     <select class="form-select form-select-sm mb-2">
                         <option>Size S</option>
                         <option>Size M</option>
                         <option>Size L</option>
                     </select>
-                    <button class="btn btn-pink btn-sm w-100" onclick="addToCart(204)">
+                    <button class="btn btn-pink btn-sm w-100" onclick="addToCart(4)">
                         🛒 Thêm vào giỏ
                     </button>
                 </div>
@@ -161,16 +160,16 @@
     </div> <div class="row g-4 mb-4">
         <div class="col-md-3 col-sm-6">
             <div class="card teddy-card text-center h-100 shadow-sm">
-                <img src="img/new5.jpg" class="teddy-img card-img-top" alt="Súp Lơ Ngon Miệng">
+                <img src="img/teddy 5.jpg" class="teddy-img card-img-top" alt="Teddy Nâu Cổ Điển">
                 <div class="card-body d-flex flex-column justify-content-between">
-                    <h6>Súp Lơ Ngon Miệng</h6>
+                    <h6>Teddy Nâu Cổ Điển</h6>
                     <p class="text-danger fw-bold">250.000 đ</p>
                     <select class="form-select form-select-sm mb-2">
                         <option>Size S</option>
                         <option>Size M</option>
                         <option>Size L</option>
                     </select>
-                    <button class="btn btn-pink btn-sm w-100" onclick="addToCart(205)">
+                    <button class="btn btn-pink btn-sm w-100" onclick="addToCart(5)">
                         🛒 Thêm vào giỏ
                     </button>
                 </div>
@@ -179,16 +178,16 @@
 
         <div class="col-md-3 col-sm-6">
             <div class="card teddy-card text-center h-100 shadow-sm">
-                <img src="img/new6.jpg" class="teddy-img card-img-top" alt="Bà Cụ Vịt CuTe">
+                <img src="img/teddy 6.jpg" class="teddy-img card-img-top" alt="Gấu Hồng Vui Vẻ">
                 <div class="card-body d-flex flex-column justify-content-between">
-                    <h6>Bà Cụ Vịt CuTe</h6>
+                    <h6>Gấu Hồng Vui Vẻ</h6>
                     <p class="text-danger fw-bold">270.000 đ</p>
                     <select class="form-select form-select-sm mb-2">
                         <option>Size S</option>
                         <option>Size M</option>
                         <option>Size L</option>
                     </select>
-                    <button class="btn btn-pink btn-sm w-100" onclick="addToCart(206)">
+                    <button class="btn btn-pink btn-sm w-100" onclick="addToCart(6)">
                         🛒 Thêm vào giỏ
                     </button>
                 </div>
@@ -197,16 +196,16 @@
 
         <div class="col-md-3 col-sm-6">
             <div class="card teddy-card text-center h-100 shadow-sm">
-                <img src="img/new7.jpg" class="teddy-img card-img-top" alt="Hello Kitty Dài Dài">
+                <img src="img/teddy 7.jpg" class="teddy-img card-img-top" alt="Vịt Say Hi">
                 <div class="card-body d-flex flex-column justify-content-between">
-                    <h6>Hello Kitty Dài Dài</h6>
+                    <h6>Vịt Say Hi</h6>
                     <p class="text-danger fw-bold">300.000 đ</p>
                     <select class="form-select form-select-sm mb-2">
                         <option>Size S</option>
                         <option>Size M</option>
                         <option>Size L</option>
                     </select>
-                    <button class="btn btn-pink btn-sm w-100" onclick="addToCart(207)">
+                    <button class="btn btn-pink btn-sm w-100" onclick="addToCart(7)">
                         🛒 Thêm vào giỏ
                     </button>
                 </div>
@@ -215,16 +214,16 @@
 
         <div class="col-md-3 col-sm-6">
             <div class="card teddy-card text-center h-100 shadow-sm">
-                <img src="img/new8.jpg" class="teddy-img card-img-top" alt="Bé Hà Mã có Mái Tóc Xinh Đẹp">
+                <img src="img/teddy 8.jpg" class="teddy-img card-img-top" alt="Gà Dễ Thương">
                 <div class="card-body d-flex flex-column justify-content-between">
-                    <h6>Bé Hà Mã có Mái Tóc Xinh Đẹp</h6>
+                    <h6>Gà Dễ Thương</h6>
                     <p class="text-danger fw-bold">230.000 đ</p>
                     <select class="form-select form-select-sm mb-2">
                         <option>Size S</option>
                         <option>Size M</option>
                         <option>Size L</option>
                     </select>
-                    <button class="btn btn-pink btn-sm w-100" onclick="addToCart(208)">
+                    <button class="btn btn-pink btn-sm w-100" onclick="addToCart(8)">
                         🛒 Thêm vào giỏ
                     </button>
                 </div>
@@ -233,16 +232,16 @@
     </div> <div class="row g-4">
         <div class="col-md-3 col-sm-6">
             <div class="card teddy-card text-center h-100 shadow-sm">
-                <img src="img/new9.jpg" class="teddy-img card-img-top" alt="Gấu Nâu Mạnh Mẽ">
+                <img src="img/teddy 9.jpg" class="teddy-img card-img-top" alt="Gà Rất vui vẻ">
                 <div class="card-body d-flex flex-column justify-content-between">
-                    <h6>Gấu Nâu Mạnh Mẽ</h6>
+                    <h6>Gà Rất vui vẻ</h6>
                     <p class="text-danger fw-bold">250.000 đ</p>
                     <select class="form-select form-select-sm mb-2">
                         <option>Size S</option>
                         <option>Size M</option>
                         <option>Size L</option>
                     </select>
-                    <button class="btn btn-pink btn-sm w-100" onclick="addToCart(209)">
+                    <button class="btn btn-pink btn-sm w-100" onclick="addToCart(9)">
                         🛒 Thêm vào giỏ
                     </button>
                 </div>
@@ -251,16 +250,52 @@
 
         <div class="col-md-3 col-sm-6">
             <div class="card teddy-card text-center h-100 shadow-sm">
-                <img src="img/new10.jpg" class="teddy-img card-img-top" alt="Chó Hồng Vui Vẻ">
+                <img src="img/teddy 10.jpg" class="teddy-img card-img-top" alt="Teddy Zô Truy">
                 <div class="card-body d-flex flex-column justify-content-between">
-                    <h6>Chó Hồng Vui Vẻ</h6>
+                    <h6>Teddy Zô Truy</h6>
                     <p class="text-danger fw-bold">270.000 đ</p>
                     <select class="form-select form-select-sm mb-2">
                         <option>Size S</option>
                         <option>Size M</option>
                         <option>Size L</option>
                     </select>
-                    <button class="btn btn-pink btn-sm w-100" onclick="addToCart(210)">
+                    <button class="btn btn-pink btn-sm w-100" onclick="addToCart(10)">
+                        🛒 Thêm vào giỏ
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+            <div class="card teddy-card text-center h-100 shadow-sm">
+                <img src="img/teddy 11.jpg" class="teddy-img card-img-top" alt="Teddy Tuộc Happy">
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <h6>Teddy Tuộc Happy</h6>
+                    <p class="text-danger fw-bold">300.000 đ</p>
+                    <select class="form-select form-select-sm mb-2">
+                        <option>Size S</option>
+                        <option>Size M</option>
+                        <option>Size L</option>
+                    </select>
+                    <button class="btn btn-pink btn-sm w-100" onclick="addToCart(11)">
+                        🛒 Thêm vào giỏ
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+            <div class="card teddy-card text-center h-100 shadow-sm">
+                <img src="img/teddy 12.jpg" class="teddy-img card-img-top" alt="Dog Cute">
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <h6>Dog Cute</h6>
+                    <p class="text-danger fw-bold">230.000 đ</p>
+                    <select class="form-select form-select-sm mb-2">
+                        <option>Size S</option>
+                        <option>Size M</option>
+                        <option>Size L</option>
+                    </select>
+                    <button class="btn btn-pink btn-sm w-100" onclick="addToCart(12)">
                         🛒 Thêm vào giỏ
                     </button>
                 </div>
@@ -270,10 +305,7 @@
 
 
 
-
-
-
-    <section id="cart" class="page-section container py-5 d-none">
+     <section id="cart" class="page-section container py-5 d-none">
     <h2 class="text-center text-pink mb-5 decorative-title">🛒 Giỏ Hàng Của Bạn</h2>
 
     <div class="row g-4">
@@ -337,48 +369,41 @@
 </section>
 
 
-
-
-
+        
 <!-- ===== FOOTER ===== -->
 <footer class="sweet-footer">
 
-    <!-- ĐÁM MÂY -->
     <div class="cloud-top"></div>
 
     <div class="container py-5 text-white">
-        <div class="row">
+        <div class="row text-center">
 
-            <!-- TÊN SHOP -->
-            <div class="col-md-4 text-center">
+            <div class="col-md-4">
                 <h3 class="fw-bold">🧸 SweetBear Shop</h3>
                 <p>Thiên đường gấu bông đầy yêu thương</p>
             </div>
 
-            <!-- ĐỊA CHỈ -->
-            <div class="col-md-4 text-center">
+            <div class="col-md-4">
                 <h5 class="fw-bold">HỆ THỐNG CỬA HÀNG</h5>
                 <p>TP. Đồng Nai</p>
-                <p>123. Phan Trung. Biên Hòa</p>
+                <p>123 Phan Trung, Biên Hòa</p>
                 <p>📞 037 419 0130</p>
             </div>
 
-            <!-- MẠNG XÃ HỘI -->
-            <div class="col-md-4 text-center">
-                <h5 class="fw-bold">KẾT NỐI VỚI CHÚNG TÔI</h5>
-
+            <div class="col-md-4">
+                <h5 class="fw-bold">KẾT NỐI</h5>
                 <div class="social-icons mt-3">
-                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png"></a>
-                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png"></a>
-                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png"></a>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" width="35"></a>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" width="35"></a>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" width="35"></a>
                 </div>
             </div>
 
         </div>
     </div>
 
-    
 </footer>
+
 
 
 <script src="script.js"></script>

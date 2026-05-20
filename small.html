@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Gấu Bông Size Nhỏ & Móc Khóa - SweetBear</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-pink shadow-sm">
+    <div class="container d-flex justify-content-between align-items-center">
+        <a class="navbar-brand d-flex align-items-center text-white fw-bold" href="index.html">
+            <img src="img/2.png" width="60" class="me-2">
+            SweetBear
+        </a>
+
+        <!-- Ô tìm kiếm ở giữa -->
+        <form class="d-flex mx-auto w-50">
+            <input class="form-control me-2" type="search"
+                   placeholder="Tìm gấu bông bạn thích..."
+                   id="searchInput"
+                   onkeyup="searchProduct()">
+        </form>
+        
+        <div>
+            <a href="index.html" class="btn btn-light me-2">← Quay lại Trang chủ</a>
+            <button class="btn btn-warning position-relative" onclick="window.location.href='index.html#cart'">
+                🛒 <span id="cartCount" class="badge bg-danger">0</span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+
+<!-- ===== MENU ===== -->
+<div class="menu-bar">
+    <div class="container text-center">
+        <a href="index.html" class="menu-link">Trang chủ</a>
+        <a href="run.html" class="menu-link">Túi Xách Gấu Bông</a>
+        <a href="tuimu.html" class="menu-link">Blindbox</a>
+        <a href="big.html" class="menu-link ">Gấu Bông Size Lớn ✨</a>
+        <a href="small.html" class="menu-link">Gấu Bông Size Bé 🌸</a>
+        <a href="hoa.html" class="menu-link">Hoa Gấu Bông</a>
+    </div>
+</div>
+
+<div class="menu-bar">
+    <div class="container text-center">
+        <a href="small.html" class="menu-link">Gấu Nhỏ & Móc Khóa 🌸</a>
+     </div>
+</div>
+
+
+
+<section class="container my-5">
+    
+    <div class="small-banner text-center shadow-sm">
+        <h2 class="text-pink fw-bold">🌸 GẤU BÔNG MINI & MÓC KHÓA ĐEO BALO 🌸</h2>
+        <p class="text-muted italic mb-0">Nhỏ nhắn - Xinh xắn - Phụ kiện trang trí balo, túi xách siêu hạt dẻ!</p>
+    </div>
+
+    <div class="row g-4">
+        <div class="col-md-3">
+            <div class="card teddy-card text-center position-relative">
+                <span class="badge-mini">Móc Khóa Key 🔑</span>
+                <img src="IMG/teddy 1.jpg" class="teddy-img" alt="Gấu nhỏ">
+                <div class="card-body">
+                    <h6>Móc Khóa Teddy Tuyết Trắng Bông Xù Đáng Yêu</h6>
+                    <p class="text-danger fw-bold">45.000 đ</p>
+                    <select class="form-select form-select-sm mb-2">
+                        <option>Size Mini (10cm)</option>
+                        <option>Size Nhỏ (20cm)</option>
+                    </select>
+                    <button class="btn btn-pink btn-sm w-100" onclick="addToCart(801)">
+                        🛒 Thêm vào giỏ
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card teddy-card text-center position-relative">
+                <span class="badge-mini">Bán Chạy 🔥</span>
+                <img src="IMG/teddy 2.jpg" class="teddy-img" alt="Gấu nhỏ">
+                <div class="card-body">
+                    <h6>Gấu Bông Heo Hồng Nhỏ Ôm Bình Sữa Đi Học</h6>
+                    <p class="text-danger fw-bold">55.000 đ</p>
+                    <select class="form-select form-select-sm mb-2">
+                        <option>Size 15cm</option>
+                        <option>Size 25cm</option>
+                    </select>
+                    <button class="btn btn-pink btn-sm w-100" onclick="addToCart(802)">
+                        🛒 Thêm vào giỏ
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card teddy-card text-center position-relative">
+                <span class="badge-sparkle">New ⭐</span>
+                <img src="IMG/teddy 3.jpg" class="teddy-img" alt="Gấu nhỏ">
+                <div class="card-body">
+                    <h6>Móc Treo Balo Cà Rốt Cute Đeo Nơ Chuông</h6>
+                    <p class="text-danger fw-bold">49.000 đ</p>
+                    <select class="form-select form-select-sm mb-2">
+                        <option>Size Tiêu Chuẩn (12cm)</option>
+                    </select>
+                    <button class="btn btn-pink btn-sm w-100" onclick="addToCart(803)">
+                        🛒 Thêm vào giỏ
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card teddy-card text-center position-relative">
+                <span class="badge-mini">Dễ Thương 🎀</span>
+                <img src="IMG/hh1.jpg" class="teddy-img" alt="Gấu nhỏ">
+                <div class="card-body">
+                    <h6>Móc Khóa Shin Cosplay Siêu Quậy Cực Chất</h6>
+                    <p class="text-danger fw-bold">60.000 đ</p>
+                    <select class="form-select form-select-sm mb-2">
+                        <option>Size 12cm</option>
+                        <option>Size 20cm</option>
+                    </select>
+                    <button class="btn btn-pink btn-sm w-100" onclick="addToCart(804)">
+                        🛒 Thêm vào giỏ
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div> <div class="row g-4 mt-3">
+        <div class="col-md-3">
+            <div class="card teddy-card text-center position-relative">
+                <img src="IMG/hh2.jpg" class="teddy-img" alt="Gấu nhỏ">
+                <div class="card-body">
+                    <h6>Chuột Cherry Đeo Balô Nhỏ Nhắn Xinh Xinh</h6>
+                    <p class="text-danger fw-bold">52.000 đ</p>
+                    <select class="form-select form-select-sm mb-2">
+                        <option>Size 15cm</option>
+                    </select>
+                    <button class="btn btn-pink btn-sm w-100" onclick="addToCart(805)">
+                        🛒 Thêm vào giỏ
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card teddy-card text-center position-relative">
+                <span class="badge-sparkle">Hot 🏷️</span>
+                <img src="IMG/hh8.jpg" class="teddy-img" alt="Gấu nhỏ">
+                <div class="card-body">
+                    <h6>Móc Khóa Doraemon Đeo Lắc Chuông Vàng Bằng Bông</h6>
+                    <p class="text-danger fw-bold">45.000 đ</p>
+                    <select class="form-select form-select-sm mb-2">
+                        <option>Size Mini (10cm)</option>
+                    </select>
+                    <button class="btn btn-pink btn-sm w-100" onclick="addToCart(806)">
+                        🛒 Thêm vào giỏ
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card teddy-card text-center position-relative">
+                <img src="IMG/new1.jpg" class="teddy-img" alt="Gấu nhỏ">
+                <div class="card-body">
+                    <h6>Móc Khóa Capybara Chảy Mũi Gảy Rút Siêu Lầy</h6>
+                    <p class="text-danger fw-bold">65.000 đ</p>
+                    <select class="form-select form-select-sm mb-2">
+                        <option>Size 12cm</option>
+                        <option>Size 18cm</option>
+                    </select>
+                    <button class="btn btn-pink btn-sm w-100" onclick="addToCart(807)">
+                        🛒 Thêm vào giỏ
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card teddy-card text-center position-relative">
+                <span class="badge-mini">Yêu Thích 💕</span>
+                <img src="IMG/teddy 2.jpg" class="teddy-img" alt="Gấu nhỏ">
+                <div class="card-body">
+                    <h6>Gấu Bông Trứng Lười Gudetama Đệm Mông Nhỏ</h6>
+                    <p class="text-danger fw-bold">48.000 đ</p>
+                    <select class="form-select form-select-sm mb-2">
+                        <option>Size 15cm</option>
+                    </select>
+                    <button class="btn btn-pink btn-sm w-100" onclick="addToCart(808)">
+                        🛒 Thêm vào giỏ
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div> <div class="row g-4 mt-3">
+        <div class="col-md-3">
+            <div class="card teddy-card text-center position-relative">
+                <img src="IMG/teddy 3.jpg" class="teddy-img" alt="Gấu nhỏ">
+                <div class="card-body">
+                    <h6>Móc Treo Mèo Thần Tài Mang Lại May Mắn</h6>
+                    <p class="text-danger fw-bold">50.000 đ</p>
+                    <select class="form-select form-select-sm mb-2">
+                        <option>Size 10cm</option>
+                    </select>
+                    <button class="btn btn-pink btn-sm w-100" onclick="addToCart(809)">
+                        🛒 Thêm vào giỏ
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card teddy-card text-center position-relative">
+                <span class="badge-sparkle">Gift 🎁</span>
+                <img src="IMG/teddy 1.jpg" class="teddy-img" alt="Gấu nhỏ">
+                <div class="card-body">
+                    <h6>Móc Khóa Gấu Dâu Lotso Phấn Hồng Đáng Yêu</h6>
+                    <p class="text-danger fw-bold">58.000 đ</p>
+                    <select class="form-select form-select-sm mb-2">
+                        <option>Size 12cm</option>
+                    </select>
+                    <button class="btn btn-pink btn-sm w-100" onclick="addToCart(810)">
+                        🛒 Thêm vào giỏ
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div> </section>
+
+
+
+     <section id="cart" class="page-section container py-5 d-none">
+    <h2 class="text-center text-pink mb-5 decorative-title">🛒 Giỏ Hàng Của Bạn</h2>
+
+    <div class="row g-4">
+        <div class="col-lg-7 col-md-12">
+            <div class="contact-info-card p-4">
+                <h4 class="sweet-title-pink mb-3">🧸 Các bé gấu bông đã chọn</h4>
+                
+                <div id="cartItems"></div>
+
+                <div class="d-flex justify-content-between align-items-center mt-4 pt-3 border-top">
+                    <h4 class="fw-bold text-dark mb-0">Tổng tiền thanh toán:</h4>
+                    <h3 class="text-pink fw-bold mb-0"><span id="cartTotal">0</span> đ</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-5 col-md-12">
+            <div class="feedback-card p-4">
+                <h4 class="sweet-title-pink mb-3">💳 Thông Tin Nhận Hàng</h4>
+                <p class="text-muted small">Cậu vui lòng điền chính xác để SweetBear ship các em gấu đến tận nhà nha! ✨</p>
+                
+                <form id="checkoutForm" onsubmit="handleCheckout(event)" class="mt-3">
+                    <div class="mb-3">
+                        <label for="orderName" class="form-label fw-semibold text-pink">Họ và tên người nhận:</label>
+                        <input type="text" id="orderName" class="form-control sweet-input" placeholder="Nhập tên người nhận..." required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="orderPhone" class="form-label fw-semibold text-pink">Số điện thoại liên hệ:</label>
+                        <input type="tel" id="orderPhone" class="form-control sweet-input" placeholder="Nhập số điện thoại..." required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="orderAddress" class="form-label fw-semibold text-pink">Địa chỉ giao hàng:</label>
+                        <input type="text" id="orderAddress" class="form-control sweet-input" placeholder="Số nhà, tên đường, phường, Biên Hòa..." required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="paymentMethod" class="form-label fw-semibold text-pink">Phương thức thanh toán:</label>
+                        <select id="paymentMethod" class="form-select sweet-input" required>
+                            <option value="cod">Thanh toán khi nhận hàng (COD)</option>
+                            <option value="bank">Chuyển khoản qua ngân hàng (Mã QR)</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-submit-pink w-100 py-2.5 mt-3 fw-bold fs-5">
+                        🎉 Xác Nhận Đặt Hàng Ngay
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="sweetAlertModal" class="sweet-alert-overlay d-none">
+    <div class="sweet-alert-box text-center">
+        <div class="sweet-alert-icon">🧸</div>
+        <h4 class="text-pink fw-bold mt-2" id="sweetAlertTitle">Thành công!</h4>
+        <p class="text-secondary mb-3" id="sweetAlertMsg">Đã thêm bé gấu bông xinh xắn vào giỏ hàng rồi nè!</p>
+        <button class="btn btn-submit-pink px-4 py-1.5" onclick="closeSweetAlert()">Moahhh ❤️</button>
+    </div>
+</div>
+
+</section>
+
+
+
+<footer class="sweet-footer">
+    <div class="cloud-top"></div>
+    <div class="container py-5 text-white">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <h3 class="fw-bold">🧸 SweetBear Shop</h3>
+                <p>Thiên đường gấu bông đầy yêu thương</p>
+            </div>
+            <div class="col-md-4">
+                <h5 class="fw-bold">HỆ THỐNG CỬA HÀNG</h5>
+                <p>TP. Đồng Nai</p>
+                <p>123 Phan Trung, Biên Hòa</p>
+                <p>📞 037 419 0130</p>
+            </div>
+            <div class="col-md-4">
+                <h5 class="fw-bold">KẾT NỐI VỚI CHÚNG TÔI</h5>
+                <div class="social-icons mt-3">
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" width="35" class="mx-1"></a>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" width="35" class="mx-1"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+    if (typeof updateCartCount === 'function') {
+        updateCartCount();
+    }
+</script>
+</body>
+</html>
