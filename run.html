@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Gấu Bông Biết Chạy - SweetBear</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar navbar-expand-lg navbar-light bg-pink shadow-sm">
+    <div class="container d-flex justify-content-between align-items-center">
+
+        <a class="navbar-brand d-flex align-items-center text-white fw-bold" href="#">
+            <img src="img/2.png"width="60" class="me-2">
+            SweetBear
+        </a>
+
+        <div>
+            <a href="index.html" class="btn btn-light">
+            ← Quay lại Trang chủ
+            </a>
+            <button class="btn btn-warning position-relative">
+                🛒 <span id="cartCount" class="badge bg-danger">0</span>
+            </button>
+        </div>
+
+    </div>
+</nav>
+
+<!-- ===== MENU ===== -->
+<div class="menu-bar">
+    <div class="container text-center">
+        <a href="index.html" class="menu-link">Trang chủ</a>
+        <a href="Gioithieu.html" class="menu-link">Giới Thiệu</a>
+        <a href="teddy.html" class="menu-link ">Gấu bông Teddy</a>
+        <a href="Hoathinh.html" class="menu-link">Gấu bông Hoạt hình</a>
+        <a href="new.html" class="menu-link">Hàng mới về</a>
+    </div>
+</div>
+
+<div class="menu-bar">
+    <div class="container text-center">
+        <a href="run.html" class="menu-link">Túi Đeo Hình Gấu</a>
+     </div>
+</div>
+
+
+
+<!-- ===== PRODUCT PAGE ===== -->
+<section class="product-page container mt-4 mb-5">
+    <div class="row">
+
+        <!-- DANH MỤC -->
+        <div class="col-md-3">
+            <div class="category-box">
+                <h4>DANH MỤC SẢN PHẨM</h4>
+                <ul class="category-list">
+                    <li><a href="run.html">Túi Đeo Gấu bông </a></li>
+                    <li><a href="tuimu.html">Blind Box</a></li>
+                    <li><a href="#">Gấu bông size lớn</a></li>
+                    <li><a href="#">Gấu bông size nhỏ</a></li>
+                    <li><a href="hoa.html">Hoa Gấu Bông</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- SẢN PHẨM -->
+        <div class="col-md-9">
+
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <p class="result-text">Hiển thị tất cả <strong>11</strong> sản phẩm</p>
+
+                <select class="form-select w-auto">
+                    <option>Mới nhất</option>
+                    <option>Giá tăng dần</option>
+                    <option>Giá giảm dần</option>
+                </select>
+            </div>
+
+           <div class="row g-4">
+  
+    <!-- 1 -->
+    <div class="col-md-3">
+        <div class="card teddy-card text-center">
+            <img src="IMG/tui1.jpg" class="teddy-img">
+            <div class="card-body">
+                <h6>Túi Đeo Hình ngựa</h6>
+                <p class="text-danger fw-bold">250.000 đ</p>
+                <select class="form-select form-select-sm mb-2">
+                    <option>Size S</option>
+                    <option>Size M</option>
+                    <option>Size L</option>
+                </select>
+                <button class="btn btn-pink btn-sm"
+                         onclick="addToCart(1)">
+                    🛒Thêm vào giỏ
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="col-md-3">
+        <div class="card teddy-card text-center">
+            <img src="IMG/tui2.jpg" class="teddy-img">
+            <div class="card-body">
+                <h6>Túi Đeo Hình chó</h6>
+                <p class="text-danger fw-bold">270.000 đ</p>
+                <select class="form-select form-select-sm mb-2">
+                    <option>Size S</option>
+                    <option>Size M</option>
+                    <option>Size L</option>
+                </select>
+                <button class="btn btn-pink btn-sm"
+                         onclick="addToCart(1)">
+                    🛒Thêm vào giỏ
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="col-md-3">
+        <div class="card teddy-card text-center">
+            <img src="IMG/tui3.jpg" class="teddy-img">
+            <div class="card-body">
+                <h6>Túi Đeo Hình mèo</h6>
+                <p class="text-danger fw-bold">300.000 đ</p>
+                <select class="form-select form-select-sm mb-2">
+                    <option>Size S</option>
+                    <option>Size M</option>
+                    <option>Size L</option>
+                </select>
+                <button class="btn btn-pink btn-sm"
+                         onclick="addToCart(1)">
+                    🛒Thêm vào giỏ
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="col-md-3">
+        <div class="card teddy-card text-center">
+            <img src="IMG/tui4.jpg" class="teddy-img">
+            <div class="card-body">
+                <h6>Túi Đeo Hình chó hamburge</h6>
+                <p class="text-danger fw-bold">230.000 đ</p>
+                <select class="form-select form-select-sm mb-2">
+                    <option>Size S</option>
+                    <option>Size M</option>
+                    <option>Size L</option>
+                </select>
+                <button class="btn btn-pink btn-sm"
+                         onclick="addToCart(1)">
+                    🛒Thêm vào giỏ
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- HẾT HÀNG 1 -->
+     <div class="row g-4">
+
+    <!-- MỞ HÀNG 2 -->
+    
+    <!-- 1 -->
+    <div class="col-md-3">
+        <div class="card teddy-card text-center">
+            <img src="img/tui5.jpg" class="teddy-img">
+            <div class="card-body">
+                <h6>Túi Đeo Hình cừu </h6>
+                <p class="text-danger fw-bold">250.000 đ</p>
+                <select class="form-select form-select-sm mb-2">
+                    <option>Size S</option>
+                    <option>Size M</option>
+                    <option>Size L</option>
+                </select>
+                <button class="btn btn-pink btn-sm"
+                         onclick="addToCart(1)">
+                    🛒Thêm vào giỏ
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="col-md-3">
+        <div class="card teddy-card text-center">
+            <img src="img/tui6.jpg" class="teddy-img">
+            <div class="card-body">
+                <h6>Túi Đeo Hình voi</h6>
+                <p class="text-danger fw-bold">270.000 đ</p>
+                <select class="form-select form-select-sm mb-2">
+                    <option>Size S</option>
+                    <option>Size M</option>
+                    <option>Size L</option>
+                </select>
+                <button class="btn btn-pink btn-sm"
+                         onclick="addToCart(1)">
+                    🛒Thêm vào giỏ
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="col-md-3">
+        <div class="card teddy-card text-center">
+            <img src="img/tui7.jpg" class="teddy-img">
+            <div class="card-body">
+                <h6>Túi Đeo Hình chó xám</h6>
+                <p class="text-danger fw-bold">300.000 đ</p>
+                <select class="form-select form-select-sm mb-2">
+                    <option>Size S</option>
+                    <option>Size M</option>
+                    <option>Size L</option>
+                </select>
+                <button class="btn btn-pink btn-sm"
+                         onclick="addToCart(1)">
+                    🛒Thêm vào giỏ
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="col-md-3">
+        <div class="card teddy-card text-center">
+            <img src="img/tui8.jpg" class="teddy-img">
+            <div class="card-body">
+                <h6>Túi Đeo Hình gấu trúc</h6>
+                <p class="text-danger fw-bold">230.000 đ</p>
+                <select class="form-select form-select-sm mb-2">
+                    <option>Size S</option>
+                    <option>Size M</option>
+                    <option>Size L</option>
+                </select>
+                <button class="btn btn-pink btn-sm"
+                         onclick="addToCart(1)">
+                    🛒Thêm vào giỏ
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- HẾT HÀNG 2 -->
+
+    <div class="row g-4">
+
+    <!-- MỞ HÀNG 3 -->
+    
+    <!-- 1 -->
+    <div class="col-md-3">
+        <div class="card teddy-card text-center">
+            <img src="img/tui9.jpg" class="teddy-img">
+            <div class="card-body">
+                <h6>Túi Đeo Hình heo</h6>
+                <p class="text-danger fw-bold">250.000 đ</p>
+                <select class="form-select form-select-sm mb-2">
+                    <option>Size S</option>
+                    <option>Size M</option>
+                    <option>Size L</option>
+                </select>
+                <button class="btn btn-pink btn-sm"
+                         onclick="addToCart(1)">
+                    🛒Thêm vào giỏ
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="col-md-3">
+        <div class="card teddy-card text-center">
+            <img src="img/tui10.jpg" class="teddy-img">
+            <div class="card-body">
+                <h6>Túi Đeo Hình thỏ trắng</h6>
+                <p class="text-danger fw-bold">270.000 đ</p>
+                <select class="form-select form-select-sm mb-2">
+                    <option>Size S</option>
+                    <option>Size M</option>
+                    <option>Size L</option>
+                </select>
+                <button class="btn btn-pink btn-sm"
+                         onclick="addToCart(1)">
+                    🛒Thêm vào giỏ
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="col-md-3">
+        <div class="card teddy-card text-center">
+            <img src="img/tui11.jpg" class="teddy-img">
+            <div class="card-body">
+                <h6>Túi Đeo Hình thỏ ngọc</h6>
+                <p class="text-danger fw-bold">300.000 đ</p>
+                <select class="form-select form-select-sm mb-2">
+                    <option>Size S</option>
+                    <option>Size M</option>
+                    <option>Size L</option>
+                </select>
+                <button class="btn btn-pink btn-sm"
+                        onclick="addToCart(1)">
+                    🛒Thêm vào giỏ
+                </button>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- ===== FOOTER ===== -->
+<footer class="sweet-footer">
+
+    <!-- ĐÁM MÂY -->
+    <div class="cloud-top"></div>
+
+    <div class="container py-5 text-white">
+        <div class="row">
+
+            <!-- TÊN SHOP -->
+            <div class="col-md-4 text-center">
+                <h3 class="fw-bold">🧸 SweetBear Shop</h3>
+                <p>Thiên đường gấu bông đầy yêu thương</p>
+            </div>
+
+            <!-- ĐỊA CHỈ -->
+            <div class="col-md-4 text-center">
+                <h5 class="fw-bold">HỆ THỐNG CỬA HÀNG</h5>
+                <p>TP. Đồng Nai</p>
+                <p>123. Phan Trung. Biên Hòa</p>
+                <p>📞 037 419 0130</p>
+            </div>
+
+            <!-- MẠNG XÃ HỘI -->
+            <div class="col-md-4 text-center">
+                <h5 class="fw-bold">KẾT NỐI VỚI CHÚNG TÔI</h5>
+
+                <div class="social-icons mt-3">
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png"></a>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png"></a>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png"></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</footer>
+
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,279 @@
+body {
+    background-color: #fff6fb;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.bg-pink {
+    background-color: #ff9ecb;
+
+}
+
+.text-pink {
+    color: #ff4fa3;
+}
+
+/* ===== MENU BAR ===== */
+.menu-bar {
+    background-color: #ffd1e8;
+}
+
+.menu-bar button {
+    border: none;
+    background: none;
+    margin: 0 15px;
+    font-weight: 500;
+    color: #ff2f91;
+}
+
+.menu-bar button:hover {
+    text-decoration: underline;
+}
+
+/* CARD */
+.card {
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.product-img {
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.cart-item {
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+/* ===== HERO BANNER ===== */
+.hero-banner {
+    height: 400px;
+    background: linear-gradient(to right, #ff9ecb, #ff4fa3);
+}
+
+/* ===== BANNER SLIDER ===== */
+.banner-img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background: rgba(0,0,0,0.4);
+    padding: 15px;
+    border-radius: 15px;
+}
+/* ===== DANH MỤC BOX ===== */
+.category-box {
+    background: #ffd1e8;
+    padding: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.category-box:hover {
+    transform: scale(1.05);
+    background: #ffb3d9;
+}
+/* ===== PROFILE CARD ===== */
+.profile-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #ff9ecb;
+}
+
+
+
+/* ===== TEDDY GRID ===== */
+/* ===== MENU BAR ===== */
+.menu-bar {
+    background-color: #ffd1e8;
+    padding: 10px 0;
+}
+
+.menu-link {
+    margin: 0 25px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #ff2f91;
+}
+
+.menu-link:hover {
+    text-decoration: underline;
+}
+
+.menu-link.active {
+    font-weight: bold;
+    border-bottom: 2px solid #ff2f91;
+}
+
+.teddy-card {
+    padding: 10px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.teddy-card:hover {
+    transform: translateY(-5px);
+}
+
+.teddy-img {
+    height: 150px;   /* Ảnh nhỏ lại */
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+/* ===== MENU LINK ===== */
+.menu-bar {
+    background-color: #ffd1e8;
+}
+
+.menu-link {
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #ff2f91;
+}
+
+.menu-link:hover {
+    text-decoration: underline;
+}
+
+.menu-link.active {
+    font-weight: bold;
+    border-bottom: 2px solid #ff2f91;
+}
+/* ===== DANH MỤC ===== */
+.category-box {
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.category-box h4 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.category-list {
+    list-style: none;
+    padding: 0;
+}
+
+.category-list li {
+    padding: 8px 0;
+    font-weight: 500;
+}
+
+.category-list a {
+    text-decoration: none;
+    color: #333;
+}
+
+.category-list a:hover {
+    color: #ff2f91;
+}
+
+.sub-category {
+    list-style: none;
+    padding-left: 15px;
+    font-size: 14px;
+}
+
+.result-text {
+    font-weight: 500;
+}
+
+
+
+/* === GIOI THIEU=== */
+.text-pink {
+    color: #ff4fa3;
+    font-weight: bold;
+}
+
+section p {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* ===== TIÊU ĐỀ BÊN TRÁI ===== */
+.sweet-title {
+    color: #ff4fa3;
+    font-weight: bold;
+    font-size: 26px;
+    text-align: left;
+    margin-left: 10px;
+}
+
+
+
+
+/* ===== FOOTER ===== */
+.sweet-footer {
+    background: #e91e8f;
+    position: relative;
+    margin-top: 150px;
+}
+
+/* WAVE */
+.wave {
+    position: absolute;
+    top: -120px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 120px;
+}
+
+/* ICON */
+.social-icons img {
+    width: 40px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+
+
+
+/* run*/
+.category-box {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
