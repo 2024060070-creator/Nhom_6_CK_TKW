@@ -10,14 +10,21 @@
 </head>
 <body>
 
+    <div class="top-announcement-bar py-2 text-white fw-semibold">
+    <div class="container-fluid">
+        <marquee behavior="scroll" direction="left" scrollamount="6" onmouseover="this.stop();" onmouseout="this.start();">
+            ✨ MÃ ThayTuanAnh_chuchi - GIẢM NGAY 50% CHO ĐƠN HÀNG TỪ 99K 🧸 ✨ NHẬP MÃ ThayTuanAnh_DepZai - GIẢM NGAY 50K CHO ĐƠN HÀNG TỪ 69K 🛒 ✨ WELCOME TO SWEETBEAR SHOP - THIÊN ĐƯỜNG GẤU BÔNG ĐẦY YÊU THƯƠNG ❤️
+        </marquee>
+    </div>
+</div>
 <!-- ===== NAVBAR ===== -->
 <nav class="navbar navbar-expand-lg navbar-light bg-pink shadow-sm">
     <div class="container d-flex justify-content-between align-items-center">
 
-        <a class="navbar-brand d-flex align-items-center text-white fw-bold" href="#">
-            <img src="img/2.png"width="60" class="me-2">
-            SweetBear
-        </a>
+        <a class="navbar-brand d-flex align-items-center text-white fw-bold" href="index.html">
+    <img src="img/2.png" width="80" class="me-2 glowing-logo" alt="SweetBear Logo">
+    SweetBear
+</a>
 
         <!-- Ô tìm kiếm ở giữa -->
         <form class="d-flex mx-auto w-50">
@@ -61,19 +68,46 @@
     <div class="row">
 
         <!-- DANH MỤC -->
-        <div class="col-md-3">
-            <div class="category-box">
-                <h4>DANH MỤC SẢN PHẨM</h4>
-                <ul class="category-list">
-                    <li><a href="run.html">Túi Đeo Gấu bông </a></li>
-                    <li><a href="tuimu.html">Blind Box</a></li>
-                    <li><a href="big.html">Gấu bông size lớn</a></li>
-                    <li><a href="small.html">Gấu bông size nhỏ</a></li>
-                    <li><a href="hoa.html">Hoa Gấu Bông</a></li>
+       <section class="product-page container mt-4 mb-5">
+    <div class="row">
+
+        <div class="col-md-3 mb-4">
+            <div class="category-box-rainbow p-4 rounded-4 shadow-sm">
+                <h4 class="rainbow-title fw-bold text-center mb-4">
+                    DANH MỤC SẢN PHẨM
+                </h4>
+                
+                <ul class="category-list-rainbow list-unstyled mb-0">
+                    <li>
+                        <a href="run.html" class="d-flex align-items-center">
+                            <span class="me-2">🎒</span> Túi Đeo Gấu bông
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tuimu.html" class="d-flex align-items-center">
+                            <span class="me-2">🎀</span> Blind Box
+                        </a>
+                    </li>
+                    <li>
+                        <a href="big.html" class="d-flex align-items-center">
+                            <span class="me-2">🧸</span> Gấu bông size lớn
+                        </a>
+                    </li>
+                    <li>
+                        <a href="small.html" class="d-flex align-items-center">
+                            <span class="me-2">👶</span> Gấu bông size nhỏ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="hoa.html" class="d-flex align-items-center">
+                            <span class="me-2">✨</span> Hoa Gấu Bông
+                        </a>
+                    </li>
                 </ul>
+                
+                <div class="wave-decoration mt-3"></div>
             </div>
         </div>
-
         <!-- SẢN PHẨM -->
         <div class="col-md-9">
 
@@ -341,44 +375,46 @@
 
 
 
-<!-- ===== FOOTER ===== -->
-<footer class="sweet-footer">
+<footer class="sweet-footer position-relative">
 
-    <!-- ĐÁM MÂY -->
-    <div class="cloud-top"></div>
+    <div class="cloud-top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+            <path fill="#e91e8f" opacity="0.25" d="M0,128C180,192,360,224,540,192C720,160,900,64,1080,85.3C1260,107,1420,245,1440,256L1440,320L0,320Z"></path>
+            
+            <path fill="#e91e8f" opacity="0.45" d="M0,192C120,160,240,96,360,112C480,128,600,224,720,224C840,224,960,128,1080,112C1200,96,1320,160,1380,176L1440,192L1440,320L0,320Z"></path>
+            
+            <path fill="#e91e8f" opacity="1" d="M0,160C120,192,240,256,360,256C480,256,600,192,720,160C840,128,960,128,1080,160C1200,192,1320,256,1380,288L1440,320L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+        </svg>
+    </div>
 
-    <div class="container py-5 text-white">
+    <div class="container py-5 text-white position-relative" style="z-index: 2;">
         <div class="row">
 
-            <!-- TÊN SHOP -->
-            <div class="col-md-4 text-center">
+            <div class="col-md-4 text-center mb-4 mb-md-0">
                 <h3 class="fw-bold">🧸 SweetBear Shop</h3>
                 <p>Thiên đường gấu bông đầy yêu thương</p>
             </div>
 
-            <!-- ĐỊA CHỈ -->
-            <div class="col-md-4 text-center">
+            <div class="col-md-4 text-center mb-4 mb-md-0">
                 <h5 class="fw-bold">HỆ THỐNG CỬA HÀNG</h5>
-                <p>TP. Đồng Nai</p>
-                <p>123. Phan Trung. Biên Hòa</p>
-                <p>📞 037 419 0130</p>
+                <p class="mb-1">Trảng Dài, TP.Đồng Nai</p>
+                <p class="mb-1">123/Phan Trung, Biên Hòa, TP.Đồng Nai</p>
+                <p class="mb-0">📞 037 419 0130</p>
             </div>
 
-            <!-- MẠNG XÃ HỘI -->
             <div class="col-md-4 text-center">
                 <h5 class="fw-bold">KẾT NỐI VỚI CHÚNG TÔI</h5>
-
                 <div class="social-icons mt-3">
-                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png"></a>
-                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png"></a>
-                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png"></a>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram"></a>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="Tiktok"></a>
                 </div>
             </div>
 
         </div>
     </div>
-
 </footer>
+
 
 </footer>
 <script src="script.js"></script>
