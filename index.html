@@ -7,11 +7,10 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    
 </head>
 <body>
 
-    <div class="top-announcement-bar py-2 text-white fw-semibold">
+<div class="top-announcement-bar py-2 text-white fw-semibold">
     <div class="container-fluid">
         <marquee behavior="scroll" direction="left" scrollamount="6" onmouseover="this.stop();" onmouseout="this.start();">
             ✨ MÃ ThayTuanAnh_chuchi - GIẢM NGAY 50% CHO ĐƠN HÀNG TỪ 99K 🧸 ✨ NHẬP MÃ ThayTuanAnh_DepZai - GIẢM NGAY 50K CHO ĐƠN HÀNG TỪ 69K 🛒 ✨ WELCOME TO SWEETBEAR SHOP - THIÊN ĐƯỜNG GẤU BÔNG ĐẦY YÊU THƯƠNG ❤️
@@ -19,312 +18,245 @@
     </div>
 </div>
 
-<!-- ===== NAVBAR TRÊN ===== -->
 <nav class="navbar navbar-expand-lg navbar-light bg-pink shadow-sm">
     <div class="container">
-
         <a class="navbar-brand d-flex align-items-center text-white fw-bold" href="index.html">
-    <img src="img/2.png" width="80" class="me-2 glowing-logo" alt="SweetBear Logo">
-    SweetBear
-</a>
+            <img src="img/2.png" width="80" class="me-2 glowing-logo" alt="SweetBear Logo">
+            SweetBear
+        </a>
 
-        <!-- Ô tìm kiếm ở giữa -->
         <form class="d-flex mx-auto w-50">
-            <input class="form-control me-2" type="search"
-                   placeholder="Tìm gấu bông bạn thích..."
-                   id="searchInput"
-                   onkeyup="searchProduct()">
+            <input class="form-control me-2" type="search" placeholder="Tìm gấu bông bạn thích..." id="searchInput" onkeyup="searchProduct()">
         </form>
 
-        <!-- Giỏ hàng bên phải -->
         <button class="btn btn-warning position-relative" onclick="showPage('cart')">
             🛒 <span id="cartCount" class="badge bg-danger">0</span>
         </button>
-
     </div>
 </nav>
 
-<!-- ===== MENU DƯỚI NAVBAR ===== -->
 <div class="menu-bar">
     <div class="container text-center">
         <a href="index.html" class="menu-link active">Trang chủ</a>
         <a href="Gioithieu.html" class="menu-link">Giới Thiệu</a>
-        <a href="teddy.html" class="menu-link ">Gấu bông Teddy</a>
+        <a href="teddy.html" class="menu-link">Gấu bông Teddy</a>
         <a href="Hoathinh.html" class="menu-link">Gấu bông Hoạt hình</a>
         <a href="new.html" class="menu-link">Hàng mới về</a>
     </div>
 </div>
 
-<!-- ===== HOME ===== -->
 <section id="home" class="page-section">
 
-   <!-- ===== SLIDER QUẢNG CÁO ===== -->
-<div id="bannerSlider" class="carousel slide" data-bs-ride="carousel">
-
-    <div class="carousel-inner">
-
-        <!-- Ảnh 1 -->
-        <div class="carousel-item active">
-            <img src="img/bear1.png" class="d-block w-100 banner-img">
+    <div id="bannerSlider" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/bear1.png" class="d-block w-100 banner-img" alt="Banner 1">
+            </div>
+            <div class="carousel-item">
+                <img src="img/banner.png" class="d-block w-100 banner-img" alt="Banner 2">
+            </div>
         </div>
 
-        <!-- Ảnh 2 -->
-        <div class="carousel-item">
-            <img src="img/banner.png" class="d-block w-100 banner-img">
-            
-        </div>
-
+        <button class="carousel-control-prev" type="button" data-bs-target="#bannerSlider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#bannerSlider" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
     </div>
 
-    <!-- Nút điều hướng -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#bannerSlider" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-    </button>
-
-    <button class="carousel-control-next" type="button" data-bs-target="#bannerSlider" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-    </button>
-
-</div>
-
-
-    <!-- Danh mục nhanh -->
     <div class="container py-5 text-center">
         <h2 class="text-pink mb-4">Danh mục nổi bật</h2>
         <div class="row">
             <div class="col-md-4">
-            <a href="run.html" class="text-decoration-none">
-                <div class="category-box">
-                    🧸
-                    <h5>Túi Xách Gấu Bông</h5>
-                </div>
-            </a>
-        </div>
-         <div class="col-md-4">
-            <a href="tuimu.html" class="text-decoration-none">
-                <div class="category-box">
-                    🎀
-                    <h5>blind box</h5>
-                </div>
-            </a>
-        </div>
-              
+                <a href="run.html" class="text-decoration-none">
+                    <div class="category-box">🧸<h5>Túi Xách Gấu Bông</h5></div>
+                </a>
+            </div>
             <div class="col-md-4">
-            <a href="hoa.html" class="text-decoration-none">
-                <div class="category-box">
-                    ✨
-                    <h5>Hoa Gấu Bông</h5>
-                </div>
-            </a>
+                <a href="tuimu.html" class="text-decoration-none">
+                    <div class="category-box">🎀<h5>blind box</h5></div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="hoa.html" class="text-decoration-none">
+                    <div class="category-box">✨<h5>Hoa Gấu Bông</h5></div>
+                </a>
+            </div>
         </div>
     </div>
 
     <hr class="my-5" style="border-top: 2px dashed #ff9ecb;">
 
-
-    <!-- HANG BAN CHAY -->
     <div class="container py-5 hot-sales-section">
-    
-    <div class="text-center mb-5 position-relative header-bow-container">
-        <h2 class="hot-title text-pink fw-bold mb-2">✨ BÉ GẤU BÁN CHẠY NHẤT THÁNG ✨</h2>
-        <div class="giant-pink-bow">🎀</div>
-        <p class="hot-subtitle">Những em gấu siêu hot hit đang làm mưa làm gió tại SweetBear</p>
-    </div>
-
-    <div class="row g-4">
-        
-        <div class="col-6 col-md-4 col-lg-2">
-            <div class="card h-100 sweet-product-card shadow-sm border-0 text-center">
-                <span class="badge-hot">HOT 🔥</span>
-                <div class="img-wrapper">
-                    <img src="img/hh1.jpg" class="card-img-top p-2" alt="Shin quạu quọ">
-                </div>
-                <div class="card-body d-flex flex-column justify-content-between p-2">
-                    <h6 class="card-title fw-bold text-truncate-2">Shin quạu quọ</h6>
-                    <p class="product-price mb-2">250.000 đ</p>
-                    <button class="btn btn-pink-sweet btn-sm w-100 rounded-pill" onclick="addToCart(101)">
-                        🛒 Thêm ngay
-                    </button>
-                </div>
-            </div>
+        <div class="text-center mb-5 position-relative header-bow-container">
+            <h2 class="hot-title text-pink fw-bold mb-2">✨ BÉ GẤU BÁN CHẠY NHẤT THÁNG ✨</h2>
+            <div class="giant-pink-bow">🎀</div>
+            <p class="hot-subtitle">Những em gấu siêu hot hit đang làm mưa làm gió tại SweetBear</p>
         </div>
 
-        <div class="col-6 col-md-4 col-lg-2">
-            <div class="card h-100 sweet-product-card shadow-sm border-0 text-center">
-                <span class="badge-hot">BEST ✨</span>
-                <div class="img-wrapper">
-                    <img src="img/hh2.jpg" class="card-img-top p-2" alt="Chuột Cherry Mặt trời">
-                </div>
-                <div class="card-body d-flex flex-column justify-content-between p-2">
-                    <h6 class="card-title fw-bold text-truncate-2">Chuột Cherry Mặt trời</h6>
-                    <p class="product-price mb-2">270.000 đ</p>
-                    <button class="btn btn-pink-sweet btn-sm w-100 rounded-pill" onclick="addToCart(102)">
-                        🛒 Thêm ngay
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-6 col-md-4 col-lg-2">
-            <div class="card h-100 sweet-product-card shadow-sm border-0 text-center">
-                <span class="badge-hot">CUTE 🎒</span>
-                <div class="img-wrapper">
-                    <img src="img/tui4.jpg" class="card-img-top p-2" alt="Túi Đeo Hình chó hamburge">
-                </div>
-                <div class="card-body d-flex flex-column justify-content-between p-2">
-                    <h6 class="card-title fw-bold text-truncate-2">Túi Chó Hamburge</h6>
-                    <p class="product-price mb-2">230.000 đ</p>
-                    <button class="btn btn-pink-sweet btn-sm w-100 rounded-pill" onclick="addToCart(304)">
-                        🛒 Thêm ngay
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-6 col-md-4 col-lg-2">
-            <div class="card h-100 sweet-product-card shadow-sm border-0 text-center">
-                <span class="badge-hot">HOT 🔥</span>
-                <div class="img-wrapper">
-                    <img src="img/tui11.jpg" class="card-img-top p-2" alt="Túi Đeo Hình thỏ ngọc">
-                </div>
-                <div class="card-body d-flex flex-column justify-content-between p-2">
-                    <h6 class="card-title fw-bold text-truncate-2">Túi Thỏ Ngọc</h6>
-                    <p class="product-price mb-2">300.000 đ</p>
-                    <button class="btn btn-pink-sweet btn-sm w-100 rounded-pill" onclick="addToCart(311)">
-                        🛒 Thêm ngay
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-6 col-md-4 col-lg-2">
-            <div class="card h-100 sweet-product-card shadow-sm border-0 text-center">
-                <span class="badge-hot">LOVE ❤️</span>
-                <div class="img-wrapper">
-                    <img src="img/teddy 5.jpg" class="card-img-top p-2" alt="Teddy Nâu Cổ Điển">
-                </div>
-                <div class="card-body d-flex flex-column justify-content-between p-2">
-                    <h6 class="card-title fw-bold text-truncate-2">Teddy Nâu Cổ Điển</h6>
-                    <p class="product-price mb-2">250.000 đ</p>
-                    <button class="btn btn-pink-sweet btn-sm w-100 rounded-pill" onclick="addToCart(5)">
-                        🛒 Thêm ngay
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-6 col-md-4 col-lg-2">
-            <div class="card h-100 sweet-product-card shadow-sm border-0 text-center">
-                <span class="badge-hot">NEW ⭐</span>
-                <div class="img-wrapper">
-                    <img src="img/teddy 11.jpg" class="card-img-top p-2" alt="Teddy Tuộc Happy">
-                </div>
-                <div class="card-body d-flex flex-column justify-content-between p-2">
-                    <h6 class="card-title fw-bold text-truncate-2">Teddy Tuộc Happy</h6>
-                    <p class="product-price mb-2">300.000 đ</p>
-                    <button class="btn btn-pink-sweet btn-sm w-100 rounded-pill" onclick="addToCart(11)">
-                        🛒 Thêm ngay
-                    </button>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-<!-- ===== CAM KẾT DỊCH VỤ ===== -->
-<div class="bg-light py-4 my-5">
-    <div class="container">
-        <div class="row text-center g-3">
-            <div class="col-md-4">
-                <div class="fs-2 text-pink">🚀</div>
-                <h6 class="fw-bold">Giao hàng siêu tốc</h6>
-                <p class="small text-muted mb-0">Nội thành Biên Hòa nhận hàng trong 2h</p>
-            </div>
-            <div class="col-md-4">
-                <div class="fs-2 text-pink">🎁</div>
-                <h6 class="fw-bold">Gói quà miễn phí</h6>
-                <p class="small text-muted mb-0">Tặng kèm thiệp viết tay siêu thương</p>
-            </div>
-            <div class="col-md-4">
-                <div class="fs-2 text-pink">⭐</div>
-                <h6 class="fw-bold">Chất lượng cao cấp</h6>
-                <p class="small text-muted mb-0">100% bông gòn trắng tinh khiết an toàn</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- ===== GIỚI THIỆU NHÓM ===== -->
-<section class="about-section py-5">
-    <div class="container">
-
-        <!-- Tiêu đề -->
-        <div class="text-center mb-4">
-            <h2 class="text-pink fw-bold">GIỚI THIỆU NHÓM THỰC HIỆN</h2>
-            <p class="mt-3">
-                Website SweetBear được thực hiện bởi hai sinh viên lớp Thiết Kế Web.
-                Dự án hướng đến việc xây dựng một trang web bán gấu bông
-                đơn giản, dễ sử dụng và phù hợp với người dùng trẻ.
-                Mỗi thành viên đảm nhận một nhiệm vụ riêng để hoàn thiện sản phẩm.
-            </p>
-        </div>
-
-        <!-- Thông tin thành viên -->
         <div class="row g-4">
-
-            <!-- Sinh viên 1 -->
-            <div class="col-md-6">
-                <div class="profile-card p-4 text-center shadow-sm">
-                    <img src="img/DD1.jpg" class="profile-img mb-3">
-                    <h4 class="fw-bold">Hà Thị Trà Giang</h4>
-                    <p><strong>Lớp:</strong> 24DTH3</p>
-                    <p>
-                        <strong>Sơ lược:</strong><br>
-                        Sinh viên năm hai ngành Công nghệ Thông tin.<br>
-                        Code khung xương HTML toàn bộ các trang hệ thống.
-                        Thiết kế giao diện CSS và tối ưu hiển thị Responsive (Bootstrap 5).
-                        Xây dựng các thành phần tĩnh: Navbar, Slider, Footer, Form phản hồi.
-
-                    </p>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="card h-100 sweet-product-card shadow-sm border-0 text-center">
+                    <span class="badge-hot">HOT 🔥</span>
+                    <div class="img-wrapper">
+                        <img src="img/hh1.jpg" class="card-img-top p-2" alt="Shin quạu quọ">
+                    </div>
+                    <div class="card-body d-flex flex-column justify-content-between p-2">
+                        <h6 class="card-title fw-bold text-truncate-2">Shin quạu quọ</h6>
+                        <p class="product-price mb-2">250.000 đ</p>
+                        <button class="btn btn-pink-sweet btn-sm w-100 rounded-pill" onclick="addToCart(101)">🛒 Thêm ngay</button>
+                    </div>
                 </div>
             </div>
 
-            <!-- Sinh viên 2 -->
-            <div class="col-md-6">
-                <div class="profile-card p-4 text-center shadow-sm">
-                    <img src="img/DD.jpg" class="profile-img mb-3">
-                    <h4 class="fw-bold">Kiều Diễm Ánh Ngọc</h4>
-                    <p><strong>Lớp:</strong> 24DTH1</p>
-                    <p>
-                        <strong>Sơ lược:</strong><br>
-                        Sinh viên năm hai ngành Công nghệ Thông tin.<br>
-                        Lập trình JavaScript xử lý Giỏ hàng và tự động tính tổng tiền.
-                        Viết logic tìm kiếm, lọc nhanh sản phẩm theo từ khóa (searchProduct).
-                        Code hàm chuyển đổi giao diện động mượt mà không load lại trang (showPage).
-                    </p>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="card h-100 sweet-product-card shadow-sm border-0 text-center">
+                    <span class="badge-hot">BEST ✨</span>
+                    <div class="img-wrapper">
+                        <img src="img/hh2.jpg" class="card-img-top p-2" alt="Chuột Cherry Mặt trời">
+                    </div>
+                    <div class="card-body d-flex flex-column justify-content-between p-2">
+                        <h6 class="card-title fw-bold text-truncate-2">Chuột Cherry Mặt trời</h6>
+                        <p class="product-price mb-2">270.000 đ</p>
+                        <button class="btn btn-pink-sweet btn-sm w-100 rounded-pill" onclick="addToCart(102)">🛒 Thêm ngay</button>
+                    </div>
                 </div>
             </div>
 
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="card h-100 sweet-product-card shadow-sm border-0 text-center">
+                    <span class="badge-hot">CUTE 🎒</span>
+                    <div class="img-wrapper">
+                        <img src="img/tui4.jpg" class="card-img-top p-2" alt="Túi Đeo Hình chó hamburge">
+                    </div>
+                    <div class="card-body d-flex flex-column justify-content-between p-2">
+                        <h6 class="card-title fw-bold text-truncate-2">Túi Chó Hamburge</h6>
+                        <p class="product-price mb-2">230.000 đ</p>
+                        <button class="btn btn-pink-sweet btn-sm w-100 rounded-pill" onclick="addToCart(304)">🛒 Thêm ngay</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="card h-100 sweet-product-card shadow-sm border-0 text-center">
+                    <span class="badge-hot">HOT 🔥</span>
+                    <div class="img-wrapper">
+                        <img src="img/tui11.jpg" class="card-img-top p-2" alt="Túi Đeo Hình thỏ ngọc">
+                    </div>
+                    <div class="card-body d-flex flex-column justify-content-between p-2">
+                        <h6 class="card-title fw-bold text-truncate-2">Túi Thỏ Ngọc</h6>
+                        <p class="product-price mb-2">300.000 đ</p>
+                        <button class="btn btn-pink-sweet btn-sm w-100 rounded-pill" onclick="addToCart(311)">🛒 Thêm ngay</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="card h-100 sweet-product-card shadow-sm border-0 text-center">
+                    <span class="badge-hot">LOVE ❤️</span>
+                    <div class="img-wrapper">
+                        <img src="img/teddy 5.jpg" class="card-img-top p-2" alt="Teddy Nâu Cổ Điển">
+                    </div>
+                    <div class="card-body d-flex flex-column justify-content-between p-2">
+                        <h6 class="card-title fw-bold text-truncate-2">Teddy Nâu Cổ Điển</h6>
+                        <p class="product-price mb-2">250.000 đ</p>
+                        <button class="btn btn-pink-sweet btn-sm w-100 rounded-pill" onclick="addToCart(5)">🛒 Thêm ngay</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="card h-100 sweet-product-card shadow-sm border-0 text-center">
+                    <span class="badge-hot">NEW ⭐</span>
+                    <div class="img-wrapper">
+                        <img src="img/teddy 11.jpg" class="card-img-top p-2" alt="Teddy Tuộc Happy">
+                    </div>
+                    <div class="card-body d-flex flex-column justify-content-between p-2">
+                        <h6 class="card-title fw-bold text-truncate-2">Teddy Tuộc Happy</h6>
+                        <p class="product-price mb-2">300.000 đ</p>
+                        <button class="btn btn-pink-sweet btn-sm w-100 rounded-pill" onclick="addToCart(11)">🛒 Thêm ngay</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+    <div class="bg-light py-4 my-5">
+        <div class="container">
+            <div class="row text-center g-3">
+                <div class="col-md-4">
+                    <div class="fs-2 text-pink">🚀</div>
+                    <h6 class="fw-bold">Giao hàng siêu tốc</h6>
+                    <p class="small text-muted mb-0">Nội thành Biên Hòa nhận hàng trong 2h</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="fs-2 text-pink">🎁</div>
+                    <h6 class="fw-bold">Gói quà miễn phí</h6>
+                    <p class="small text-muted mb-0">Tặng kèm thiệp viết tay siêu thương</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="fs-2 text-pink">⭐</div>
+                    <h6 class="fw-bold">Chất lượng cao cấp</h6>
+                    <p class="small text-muted mb-0">100% bông gòn trắng tinh khiết an toàn</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="about-section py-5">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="text-pink fw-bold">GIỚI THIỆU NHÓM THỰC HIỆN</h2>
+                <p class="mt-3">
+                    Website SweetBear được thực hiện bởi hai sinh viên lớp Thiết Kế Web.
+                    Dự án hướng đến việc xây dựng một trang web bán gấu bông đơn giản, dễ sử dụng và phù hợp với người dùng trẻ.
+                    Mỗi thành viên đảm nhận một nhiệm vụ riêng để hoàn thiện sản phẩm.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="profile-card p-4 text-center shadow-sm">
+                        <img src="img/DD1.jpg" class="profile-img mb-3" alt="Hà Thị Trà Giang">
+                        <h4 class="fw-bold">Hà Thị Trà Giang</h4>
+                        <p><strong>Lớp:</strong> 24DTH3</p>
+                        <p>
+                            <strong>Sơ lược:</strong><br>
+                            Sinh viên năm hai ngành Công nghệ Thông tin.<br>
+                            Code khung xương HTML toàn bộ các trang hệ thống.
+                            Thiết kế giao diện CSS và tối ưu hiển thị Responsive (Bootstrap 5).
+                            Xây dựng các thành phần tĩnh: Navbar, Slider, Footer, Form phản hồi.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="profile-card p-4 text-center shadow-sm">
+                        <img src="img/DD.jpg" class="profile-img mb-3" alt="Kiều Diễm Ánh Ngọc">
+                        <h4 class="fw-bold">Kiều Diễm Ánh Ngọc</h4>
+                        <p><strong>Lớp:</strong> 24DTH1</p>
+                        <p>
+                            <strong>Sơ lược:</strong><br>
+                            Sinh viên năm hai ngành Công nghệ Thông tin.<br>
+                            Lập trình JavaScript xử lý Giỏ hàng và tự động tính tổng tiền.
+                            Viết logic tìm kiếm, lọc nhanh sản phẩm theo từ khóa (searchProduct).
+                            Code hàm chuyển đổi giao diện động mượt mà không load lại trang (showPage).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </section>
 
-</section>
-
-
-
- <!-- GIỎ HÀNG -->
 <section id="cart" class="page-section container py-5 d-none">
     <h2 class="text-center text-pink mb-5 decorative-title">🛒 Giỏ Hàng Của Bạn</h2>
-
     <div class="row g-4">
         <div class="col-lg-7 col-md-12">
             <div class="contact-info-card p-4">
                 <h4 class="sweet-title-pink mb-3">🧸 Các bé gấu bông đã chọn</h4>
-                
                 <div id="cartItems"></div>
-
                 <div class="d-flex justify-content-between align-items-center mt-4 pt-3 border-top">
                     <h4 class="fw-bold text-dark mb-0">Tổng tiền thanh toán:</h4>
                     <h3 class="text-pink fw-bold mb-0"><span id="cartTotal">0</span> đ</h3>
@@ -336,7 +268,6 @@
             <div class="feedback-card p-4">
                 <h4 class="sweet-title-pink mb-3">💳 Thông Tin Nhận Hàng</h4>
                 <p class="text-muted small">Cậu vui lòng điền chính xác để SweetBear ship các em gấu đến tận nhà nha! ✨</p>
-                
                 <form id="checkoutForm" onsubmit="handleCheckout(event)" class="mt-3">
                     <div class="mb-3">
                         <label for="orderName" class="form-label fw-semibold text-pink">Họ và tên người nhận:</label>
@@ -357,14 +288,16 @@
                             <option value="bank">Chuyển khoản qua ngân hàng (Mã QR)</option>
                         </select>
                     </div>
-                    
-                    <button type="submit" class="btn btn-submit-pink w-100 py-2.5 mt-3 fw-bold fs-5">
-                        🎉 Xác Nhận Đặt Hàng Ngay
-                    </button>
+                    <button type="submit" class="btn btn-submit-pink w-100 py-2.5 mt-3 fw-bold fs-5">🎉 Xác Nhận Đặt Hàng Ngay</button>
                 </form>
             </div>
         </div>
     </div>
+</section>
+
+<section id="products" class="page-section container py-5 d-none">
+    <h2 class="mb-4 text-center text-pink">Danh sách gấu bông</h2>
+    <div class="row" id="productsGrid"></div>
 </section>
 
 <div id="sweetAlertModal" class="sweet-alert-overlay d-none">
@@ -376,117 +309,27 @@
     </div>
 </div>
 
-</section>
-
-
-
-
-<!-- ===== PRODUCTS ===== -->
-<section id="products" class="page-section container py-5 d-none">
-    <h2 class="mb-4 text-center text-pink">Danh sách gấu bông</h2>
-    <div class="row" id="productsGrid"></div>
-</section>
-
-<section id="cart" class="page-section container py-5 d-none">
-    <h2 class="text-center text-pink mb-5 decorative-title">🛒 Giỏ Hàng Của Bạn </h2>
-
-    <div class="row g-4">
-        <div class="col-lg-7 col-md-12">
-            <div class="contact-info-card p-4">
-                <h4 class="sweet-title-pink mb-3">🧸 Sản phẩm đã chọn</h4>
-                
-                <div id="cartItems">
-                    <div class="cart-item d-flex align-items-center justify-content-between border-bottom py-3">
-                        <div class="d-flex align-items-center">
-                            <img src="img/bear.png" width="60" class="rounded me-3" style="height:60px; object-fit:cover;">
-                            <div>
-                                <h6 class="mb-1 fw-bold text-dark">Gấu bông Teddy Hug</h6>
-                                <p class="mb-0 text-muted small">Số lượng: 1</p>
-                                <span class="text-pink fw-bold">250.000 đ</span>
-                            </div>
-                        </div>
-                        <button class="btn btn-outline-danger btn-sm rounded-pill px-3" onclick="removeFromCart(0)">
-                            ❌ Xóa
-                        </button>
-                    </div>
-                </div>
-
-                <div class="d-flex justify-content-between align-items-center mt-4 pt-3 border-top">
-                    <h4 class="fw-bold text-dark">Tổng tiền:</h4>
-                    <h3 class="text-pink fw-bold"><span id="cartTotal">0</span> đ</h3>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-lg-5 col-md-12">
-            <div class="feedback-card p-4">
-                <h4 class="sweet-title-pink mb-3">💳 Thông Tin Giao Hàng</h4>
-                <p class="text-muted small">Vui lòng điền chính xác thông tin để SweetBear ship gấu đến tận tay bạn nhé! ✨</p>
-                
-                <form id="checkoutForm" onsubmit="handleCheckout(event)" class="mt-3">
-                    <div class="mb-3">
-                        <label for="orderName" class="form-label fw-semibold text-pink">Họ và tên người nhận:</label>
-                        <input type="text" id="orderName" class="form-control sweet-input" placeholder="Nhập tên người nhận..." required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="orderPhone" class="form-label fw-semibold text-pink">Số điện thoại:</label>
-                        <input type="tel" id="orderPhone" class="form-control sweet-input" placeholder="Nhập số điện thoại..." required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="orderAddress" class="form-label fw-semibold text-pink">Địa chỉ nhận hàng:</label>
-                        <input type="text" id="orderAddress" class="form-control sweet-input" placeholder="Số nhà, tên đường, phường, tỉnh thành..." required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="paymentMethod" class="form-label fw-semibold text-pink">Phương thức thanh toán:</label>
-                        <select id="paymentMethod" class="form-select sweet-input" required>
-                            <option value="cod">Thanh toán khi nhận hàng (COD)</option>
-                            <option value="bank">Chuyển khoản ngân hàng (Qua mã QR)</option>
-                        </select>
-                    </div>
-                    
-                    <button type="submit" class="btn btn-submit-pink w-100 py-2.5 mt-3 fw-bold fs-5">
-                        🎉 Xác Nhận Đặt Hàng
-                    </button>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-<script src="script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-
-
 <footer class="sweet-footer position-relative">
-
     <div class="cloud-top">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
             <path fill="#e91e8f" opacity="0.25" d="M0,128C180,192,360,224,540,192C720,160,900,64,1080,85.3C1260,107,1420,245,1440,256L1440,320L0,320Z"></path>
-            
             <path fill="#e91e8f" opacity="0.45" d="M0,192C120,160,240,96,360,112C480,128,600,224,720,224C840,224,960,128,1080,112C1200,96,1320,160,1380,176L1440,192L1440,320L0,320Z"></path>
-            
             <path fill="#e91e8f" opacity="1" d="M0,160C120,192,240,256,360,256C480,256,600,192,720,160C840,128,960,128,1080,160C1200,192,1320,256,1380,288L1440,320L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
         </svg>
     </div>
 
     <div class="container py-5 text-white position-relative" style="z-index: 2;">
         <div class="row">
-
             <div class="col-md-4 text-center mb-4 mb-md-0">
                 <h3 class="fw-bold">🧸 SweetBear Shop</h3>
                 <p>Thiên đường gấu bông đầy yêu thương</p>
             </div>
-
             <div class="col-md-4 text-center mb-4 mb-md-0">
                 <h5 class="fw-bold">HỆ THỐNG CỬA HÀNG</h5>
                 <p class="mb-1">Trảng Dài, TP.Đồng Nai</p>
                 <p class="mb-1">123/Phan Trung, Biên Hòa, TP.Đồng Nai</p>
                 <p class="mb-0">📞 037 419 0130</p>
             </div>
-
             <div class="col-md-4 text-center">
                 <h5 class="fw-bold">KẾT NỐI VỚI CHÚNG TÔI</h5>
                 <div class="social-icons mt-3">
@@ -495,11 +338,11 @@
                     <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="Tiktok"></a>
                 </div>
             </div>
-
         </div>
     </div>
 </footer>
 
-</footer>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
